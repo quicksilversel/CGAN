@@ -319,5 +319,5 @@ transform2 = transforms.Compose([
                     transforms.Normalize(mean = (0.5), std = (0.5)), transforms.Resize((28,28))])
 generated_images = dset.ImageFolder(images_dir, transform=transform2)
 print('retraining with mixed dataset...')
-#train_data(generated_images)
+train_data(generated_images)
 
